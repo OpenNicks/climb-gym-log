@@ -1,0 +1,109 @@
+.climb-tabs-container {
+  width: 100%;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 1.5rem;
+}
+
+.tab-button {
+  padding: 0.75rem 1.5rem;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.2s;
+  margin-right: 0.5rem;
+}
+
+.tab-button:hover {
+  color: var(--primary-color);
+  background-color: #f9f9f9;
+}
+
+.tab-button.active {
+  border-bottom-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.tab-content {
+  margin-bottom: 1.5rem;
+}
+
+/* Beta content styling */
+.beta-content {
+  width: 100%;
+}
+
+.beta-placeholder {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.beta-placeholder h4 {
+  margin-top: 0;
+  color: #333;
+}
+
+.beta-placeholder p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.beta-examples {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.example-card {
+  flex: 1;
+  max-width: 180px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.example-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 1rem;
+  color: #999;
+}
+
+.example-card p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .tabs {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .tab-button {
+    padding: 0.75rem 1rem;
+  }
+  
+  .beta-examples {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .example-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}

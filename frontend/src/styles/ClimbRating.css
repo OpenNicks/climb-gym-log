@@ -1,0 +1,40 @@
+.climb-rating {
+  display: inline-flex;
+  align-items: center;
+}
+
+.star {
+  font-size: 1.25rem;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.2s;
+  user-select: none;
+}
+
+.star.active {
+  color: #ffb400;
+}
+
+.rating-value {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Size variants */
+.rating-small .star {
+  font-size: 1rem;
+}
+
+.rating-large .star {
+  font-size: 1.5rem;
+}
+
+/* Readonly variant */
+.readonly .star {
+  cursor: default;
+}
+
+.readonly .rating-value {
+  display: none;
+}

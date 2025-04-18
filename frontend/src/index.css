@@ -1,0 +1,8 @@
+body {
+  margin: 0;
+  background: #f8fafc;
+}
+input, button {
+  font-size: 1rem;
+  margin-right: 0.5em;
+}

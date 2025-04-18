@@ -1,0 +1,347 @@
+.climb-list-container {
+  width: 100%;
+}
+
+/* Filters section */
+.climb-filters {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-search {
+  flex: 1;
+  min-width: 200px;
+}
+
+.filter-options {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-options select {
+  min-width: 120px;
+}
+
+.active-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.filter-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-tag {
+  display: flex;
+  align-items: center;
+  background-color: #e0e0e0;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.filter-tag button {
+  border: none;
+  background: none;
+  font-size: 1rem;
+  margin-left: 0.3rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 0.25rem;
+}
+
+.filter-tag button:hover {
+  color: #e53e3e;
+}
+
+/* Results header */
+.climb-results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.results-count {
+  font-weight: 500;
+}
+
+.sort-options {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.sort-options span {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.sort-button {
+  background: none;
+  border: none;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.sort-button:hover {
+  background-color: #f0f0f0;
+}
+
+.sort-button.active {
+  font-weight: 600;
+  background-color: #f0f0f0;
+  color: var(--primary-color);
+}
+
+/* Climb cards */
+.climb-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.climb-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.climb-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.climb-card.expanded {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.climb-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.climb-header:hover {
+  background-color: #f9f9f9;
+}
+
+.climb-name-section {
+  flex: 1;
+}
+
+.climb-name {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.climb-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.climb-grade,
+.climb-color,
+.climb-section {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.climb-grade {
+  background-color: #4cc9f0;
+  color: white;
+}
+
+.climb-section {
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+.climb-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+}
+
+.climb-rating-display {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.star-icon {
+  color: #f59e0b;
+}
+
+.rating-count {
+  color: #666;
+  font-size: 0.85rem;
+  font-weight: normal;
+}
+
+.climb-setter,
+.climb-date {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Expanded climb details */
+.climb-details {
+  border-top: 1px solid #e0e0e0;
+  padding: 1rem;
+}
+
+.climb-description {
+  margin-bottom: 1.25rem;
+  color: #333;
+}
+
+.climb-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.climb-rating-section h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.climb-rating-control {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.loader-small {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: var(--primary-color);
+  animation: spin 1s linear infinite;
+}
+
+.climb-meta-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+/* Tabs */
+.climb-tabs {
+  margin-top: 1.5rem;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 1rem;
+}
+
+.tab-button {
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.tab-button:hover {
+  background-color: #f9f9f9;
+}
+
+.tab-button.active {
+  border-bottom-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.tab-content {
+  padding: 0.5rem 0;
+}
+
+/* Pagination */
+.climb-list-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.page-info {
+  color: #666;
+}
+
+/* Empty state */
+.climb-list-empty {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  color: #666;
+}
+
+.climb-list-empty button {
+  margin-top: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .climb-header {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .climb-stats {
+    align-items: flex-start;
+  }
+
+  .climb-actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .sort-options {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+  }
+
+  .sort-options span {
+    display: none;
+  }
+}

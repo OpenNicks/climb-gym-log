@@ -1,0 +1,246 @@
+.ascent-log-container {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.ascent-log-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.ascent-log-header h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.login-prompt-small {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Ascent Form */
+.ascent-form {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 576px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.send-status-toggle {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.status-btn {
+  flex: 1;
+  background-color: #f0f0f0;
+  border: none;
+  padding: 0.6rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.status-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.status-btn:first-child {
+  border-right: 1px solid #ccc;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+/* Stats summary */
+.ascent-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  background-color: #f0f0f0;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-item {
+  flex: 1;
+  min-width: 80px;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Filters */
+.ascent-filters {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter-btn {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.filter-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Ascent List */
+.ascent-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 2rem 0;
+  color: #666;
+}
+
+.no-ascents {
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  padding: 1.5rem;
+  text-align: center;
+  color: #666;
+}
+
+.ascent-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ascent-item {
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  background-color: white;
+  border-left: 4px solid #ccc;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.ascent-item.send {
+  border-left-color: #4caf50;
+}
+
+.ascent-item.attempt {
+  border-left-color: #ff9800;
+}
+
+.ascent-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.ascent-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ascent-status {
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.send .ascent-status {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #1b5e20;
+}
+
+.attempt .ascent-status {
+  background-color: rgba(255, 152, 0, 0.1);
+  color: #e65100;
+}
+
+.ascent-user {
+  font-weight: 500;
+}
+
+.ascent-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.ascent-grade {
+  font-weight: 600;
+  color: #4cc9f0;
+}
+
+.ascent-date {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.ascent-attempts {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.ascent-notes {
+  background-color: #f9f9f9;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+.ascent-notes p {
+  margin: 0;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}

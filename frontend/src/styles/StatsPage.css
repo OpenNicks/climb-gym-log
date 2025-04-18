@@ -1,0 +1,63 @@
+.stats-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.stats-intro {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.login-required {
+  text-align: center;
+  margin: 3rem auto;
+  max-width: 600px;
+  padding: 2rem;
+  background-color: rgba(52, 152, 219, 0.1);
+  border-radius: 8px;
+}
+
+.demo-stats {
+  margin-top: 2rem;
+  text-align: left;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.demo-stats h3 {
+  color: #3498db;
+  margin-bottom: 1rem;
+}
+
+.demo-stats ul {
+  padding-left: 1.5rem;
+}
+
+.demo-stats li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .stats-page {
+    padding: 0.5rem;
+  }
+  
+  .stats-intro {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .login-required {
+    padding: 1.5rem 1rem;
+    margin: 2rem auto;
+  }
+}
